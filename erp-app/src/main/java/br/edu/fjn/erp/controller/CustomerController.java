@@ -7,7 +7,13 @@ package br.edu.fjn.erp.controller;
 
 import br.com.caelum.vraptor.Controller;
 import br.com.caelum.vraptor.Get;
+import br.com.caelum.vraptor.Path;
+import br.com.caelum.vraptor.Post;
+import br.com.caelum.vraptor.Result;
+import br.edu.fjn.erp.domain.customer.Customer;
+import javax.inject.Inject;
 import javax.servlet.http.HttpServlet;
+import javax.ws.rs.POST;
 
 /**
  *
@@ -16,10 +22,22 @@ import javax.servlet.http.HttpServlet;
 
 /*FRAMEWORKS PESQUISAR : Spring  MVC /  VRaptor*/
 @Controller
-public class CustomerController extends HttpServlet {
-
-    @Get("/hello")
-    public void receiveRequisition() {
-        System.out.println("HELLO FRIEND!");
+@Path("customer")
+public class CustomerController {
+    @Inject
+    private Result  result;
+    
+    
+    
+   @Get("new")
+    public void formView(){    
     }
+   @Post("save")
+   public void save(Customer customer){
+       result.include("SaveComplete", "Feito! s"
+               + customer.getName()+ " Save Complete");
+       result.redirectTo(this).formView();
+        
+   }
+
 }
