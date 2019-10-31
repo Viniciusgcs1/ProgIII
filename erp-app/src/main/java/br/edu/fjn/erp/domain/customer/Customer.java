@@ -10,9 +10,20 @@ package br.edu.fjn.erp.domain.customer;
  * @author vinicius
  */
 public class Customer {
-    private String name;
-    private  String cpf;
 
+    private String name;
+    private String cpf;
+    private Address address;
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    
     public String getName() {
         return name;
     }
@@ -28,7 +39,5 @@ public class Customer {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
-   
-    
-    
+
 }

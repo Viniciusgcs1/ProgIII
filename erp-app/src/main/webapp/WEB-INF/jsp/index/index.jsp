@@ -1,6 +1,6 @@
 <%-- 
-    Document   : receberRequisicao
-    Created on : 28-Oct-2019, 19:08:45
+    Document   : index
+    Created on : 30-Oct-2019, 19:48:24
     Author     : vinicius
 --%>
 
@@ -9,10 +9,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
+        <title>Home Page</title>
     </head>
     <body>
-        <h1>Hello Friend ! </h1>
-        
+        <h1>Hello Worldsdsdd!</h1>
     </body>
 </html>
