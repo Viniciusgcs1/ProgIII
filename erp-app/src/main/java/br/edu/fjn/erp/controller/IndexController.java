@@ -8,6 +8,7 @@ package br.edu.fjn.erp.controller;
 
 import br.com.caelum.vraptor.Controller;
 import br.com.caelum.vraptor.Get;
+import br.edu.fjn.erp.annotations.Private;
 
 
 /**
@@ -16,7 +17,7 @@ import br.com.caelum.vraptor.Get;
  */
 @Controller
 public class IndexController {
-
+    @Private 
     @Get("/")
     public void index() {
     }

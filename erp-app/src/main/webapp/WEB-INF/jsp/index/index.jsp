@@ -12,6 +12,9 @@
         <title>Home Page</title>
     </head>
     <body>
-        <h1>Hello Worldsdsdd!</h1>
+        <p>User Logger: ${userSession.userName}</p>
+        <p>
+            <a href="auth/signout">Sair </a>
+        </p>
     </body>
 </html>
